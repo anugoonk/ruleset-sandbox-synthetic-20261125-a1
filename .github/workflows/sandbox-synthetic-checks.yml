@@ -1,0 +1,19 @@
+name: sandbox-synthetic-checks
+on:
+  push:
+    branches: ['ci/**']
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "synthetic build check (not an NLS test)"
+  e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "synthetic e2e check (not an NLS test)"
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "synthetic audit check (not an NLS test)"
